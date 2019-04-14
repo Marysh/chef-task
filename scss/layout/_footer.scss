@@ -1,6 +1,5 @@
 .ftr {
   background-color: $main-color;
-  padding: 10px 0 15px;
   &_nav {
     &-list {
       li {
@@ -77,6 +76,9 @@
         background-image: url('./img/icons/icon-instagram-active.png');
       }
     }
+  }
+  &-top {
+    padding: 10px 0 15px;
   }
   &-bottom-rights {
     padding: 12px;
