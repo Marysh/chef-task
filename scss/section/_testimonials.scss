@@ -1,0 +1,40 @@
+.tsl {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_slider {
+    .swiper-slide {
+      color: white;
+      position: relative;
+      padding-top: 50px;
+      &:before {
+        content: "";
+        background-image: url('./img/icons/icon-quotes.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 0;
+        right: 0;
+        top: 10px;
+        margin: auto;
+        position: absolute;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .swiper-container {
+      margin-bottom: 68px;
+      font-size: 16px;
+    }
+    p {
+      margin: 0;
+    }
+    &_author {
+      padding-top: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
+}

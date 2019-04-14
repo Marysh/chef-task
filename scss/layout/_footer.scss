@@ -1,0 +1,88 @@
+.ftr {
+  background-color: $main-color;
+  padding: 10px 0 15px;
+  &_nav {
+    &-list {
+      li {
+        min-width: 120px;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-right: 90px;
+        }
+        a {
+          color: #fff;
+          font: 400 18px 'Fjalla One';
+          text-transform: capitalize;
+          position: relative;
+          padding: 12px 0 8px;
+          &:after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            height: 1px;
+            width: 0;
+            bottom: 0;
+            left: 0;
+            background: $second-color;
+            transition: width ease 250ms;
+          }
+        }
+
+        &.active,
+        &:hover {
+          a {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_socials {
+   span {
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 14px;
+     display: inline-block;
+     margin-bottom: 14px;
+   }
+  }
+  &_social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $second-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:hover {
+      background-color: $second-color;
+      cursor: pointer;
+    }
+    &.-fb {
+      background-image: url('./img/icons/icon-fb-normal.png');
+      &:hover {
+        background-image: url('./img/icons/icon-fb-active.png');
+      }
+    }
+    &.-instagram {
+      background-image: url('./img/icons/icon-instagram-normal.png');
+      &:hover {
+        background-image: url('./img/icons/icon-instagram-active.png');
+      }
+    }
+  }
+  &-bottom-rights {
+    padding: 12px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    font-size: 14px;
+  }
+}

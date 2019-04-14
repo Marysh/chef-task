@@ -1,0 +1,46 @@
+.wt { //wine-tasting
+  .section-title {
+    margin-bottom: 40px;
+  }
+  &_card {
+    margin-bottom: 50px;
+    &_img {
+      position: relative;
+      background-color: #fff;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+
+      &-hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity ease 0.4s;
+
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover {
+        .wt_card_img-hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &_title {
+      color: #fff;
+      text-transform: uppercase;
+      font: 400 22px 'Fjalla One';
+      text-align: center;
+      line-height: 32px;
+    }
+
+  }
+}

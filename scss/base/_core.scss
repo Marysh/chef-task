@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Great+Vibes|Open+Sans');
+
+// font-family: 'Fjalla One', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Great Vibes', cursive;
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  min-width: 1170px !important; // disable responsive
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-color;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+
+  h2 {
+    font: 400 30px 'Great Vibes';
+    color: $second-color;
+    margin: 0;
+
+    span {
+      font: 400 44px 'Fjalla One';
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
+}
+
+section {
+  padding: 70px 0;
+  background-color: #fff;
+
+  &.dark-bg {
+    background-color: $main-color;
+    .section-title h2 span {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}

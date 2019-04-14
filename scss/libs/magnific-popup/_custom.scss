@@ -1,0 +1,22 @@
+.modal {
+  width: 1140px;
+  background-color: #fff;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 0;
+  padding: 68px;
+  display: flex;
+  flex-direction: row;
+
+  &_left {
+    flex-basis: 390px;
+  }
+  &_right {
+    padding-left: 20px;
+  }
+  &_title {
+     font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}

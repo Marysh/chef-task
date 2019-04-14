@@ -1,0 +1,65 @@
+.cls { // class
+  //background-color: $main-color;
+  $local-transition-duration: 300ms;
+  p {
+    text-align: center;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .swiper-wrapper {
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  .swiper-bottom-navigation {
+    margin-bottom: 50px;
+  }
+  &_slider {
+    &_card {
+      display: block;
+      transform: scale(1);
+      transition: all ease $local-transition-duration;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 1);
+        opacity: 0;
+        transition: opacity ease $local-transition-duration;
+      }
+      &_title {
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        z-index: 4;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity ease $local-transition-duration;
+        font: 400 28px 'Fjalla One';
+      }
+      &:hover {
+        transform: scale(1.066);
+        z-index: 55;
+        &:before {
+          opacity: 0.3;
+        }
+        .cls_slider_card_title {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

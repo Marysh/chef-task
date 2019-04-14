@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $second-color;
+  border: 1px solid transparent;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1;
+  min-width: 180px;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: $main-color;
+    &.btn-hover-black {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "base/variables";
+// ============ bootstrap start ============
+@import "libs/bootstrap-4.3.1/bootstrap-reboot";
+@import "libs/bootstrap-4.3.1/bootstrap-grid";
+// ============ bootstrap end ============
+@import "libs/swiper-4.5.0/swiper";
+@import "libs/swiper-4.5.0/custom";
+
+@import "libs/magnific-popup/main";
+@import "libs/magnific-popup/custom";
+
+
+@import "base/core";
+
+// ============ components start ============
+@import "component/buttons";
+@import "component/image-gallery";
+// ============ components end ============
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "section/first-screen";
+@import "section/classes";
+@import "section/training";
+@import "section/wine-tasting";
+@import "section/testimonials";
+
+// https://autoprefixer.github.io/

@@ -1,0 +1,15 @@
+.training {
+  .title {
+    margin-bottom: 50px;
+  }
+  .call-us {
+    color: $main-color;
+    font: 400 30px 'Fjalla One';
+    span {
+      margin-right: 25px;
+    }
+    a {
+      color: $second-color;
+    }
+  }
+}
